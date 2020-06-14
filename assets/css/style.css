@@ -10,7 +10,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif; 
-    background-color: darkgray;
+    background-color: white;
     color: white;
 }
 
@@ -74,7 +74,7 @@ header a {
     margin-bottom: 30px;
     display: flex;
     justify-content: flex-end;
-    align-items: flex-end;
+    align-items: center:;
     position: relative;
 }
 
@@ -106,7 +106,7 @@ header a {
 .section-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: center;
     background-color: black;
     margin-bottom: 30px;
 }
@@ -123,7 +123,62 @@ header a {
     flex: 1;
     max-width: 50%;
     margin: 30px 15px;
-
 }
 
+/** Grid Start **/
 
+.work-grid-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    color: black;
+    width: 80%;
+    height: 400px;
+    margin: 30px auto;
+    grid-gap: 10px;
+    
+}
+
+.grid-item {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    border: 5px solid var(--secondary-color);
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.work-grid-container span {
+    font-size: 25px;
+    font-weight: bold;
+    background-color: var(--secondary-color);
+    color: black;
+    border-top-right-radius: 25px;
+    padding-right: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.run-buddy {
+    background-image: url(../images/run-buddy.jpg);
+    background-size: cover;
+    grid-column: 1 / span 3;
+    grid-row: 1 / span 3;
+}
+
+.horiseon-marketing {
+    background-image: url(../images/horiseon.jpg);
+    background-size: cover;
+    grid-row: 1 / 3; 
+}
+
+.coming-soon {
+    background-image: url(../images/gear.svg);
+    background-size: cover;
+}

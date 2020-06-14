@@ -10,7 +10,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif; 
-    background-color: #a89fc1;
+    background-color: darkgray;
     color: white;
 }
 
@@ -89,7 +89,6 @@ header a {
     right:  100px;
 }
 
-
 .section-title {
     font-size: 40px;
     font-weight: bold;
@@ -99,15 +98,32 @@ header a {
     border-top-right-radius: 35px;
     border-bottom-right-radius: 35px;
     width: 45%;
+    margin-bottom: -10px;
+    position: relative;
+    z-index: 10;
 }
 
-.about-me-content {
+.section-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    background-color: black;
+    margin-bottom: 30px;
 }
 
-.about-me img {
+.section-content img {
+    flex: 1;
     max-width: 20%;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 30px;
 }
+
+.section-content p {
+    flex: 1;
+    max-width: 50%;
+    margin: 30px 15px;
+
+}
+
 

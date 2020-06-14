@@ -5,10 +5,11 @@
 
 :root {
     --primary-color: #2a0955;
+    --secondary-color: #7B54C8;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif; 
     background-color: #a89fc1;
     color: white;
 }
@@ -17,7 +18,7 @@ header {
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 20px 35px;
+    padding: 20px 35px 20px 0;
     background-color: var(--primary-color);
 }
 
@@ -25,8 +26,10 @@ header div {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
+    position: relative;
+    left: 0;
     background-color: black;
-    width: 40%;
+    width: 30%;
     border-top-right-radius: 65px;
     border-bottom-right-radius: 65px;
 }
@@ -34,20 +37,33 @@ header div h1 {
     font-size: 40px;
     font-weight: bold;
     padding: 10px 20px 10px 0;
+    letter-spacing: .05em;
 }
+
 
 header nav ul{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     font-size: 20px;
     font-weight: bold;
+    height: 65px;
 }
 
 header nav ul li {
-    padding: 10px;
+    padding: 10px 25px;
 }
+
+header a {
+    color: white;
+    font-style: bold;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+/** Hero Style Start **/
 
 .hero {
     background-image: url(../images/hero-stars.jpg);
@@ -59,12 +75,39 @@ header nav ul li {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    position: relvative;
+    position: relative;
 }
-
-.hero
 
 .hero h2 {
     color: white;
+    font-size: 36px;
+    font-weight: bold;
+    font-style: italic;
+    -webkit-text-stroke: 1px black;
     position: absolute;
+    bottom: 100px;
+    right:  100px;
 }
+
+
+.section-title {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--primary-color);
+    border-bottom: 2px solid white;
+    border-top-right-radius: 35px;
+    border-bottom-right-radius: 35px;
+    width: 45%;
+}
+
+.about-me-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.about-me img {
+    max-width: 20%;
+}
+

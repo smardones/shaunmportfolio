@@ -6,8 +6,8 @@ This is my website in which I display my work that promotes my skills as a progr
 
 ##Built With
 
-*HTML
-*CSS
+* HTML
+* CSS
 
 ##Website
 

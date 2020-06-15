@@ -38,7 +38,6 @@ header div h1 {
     letter-spacing: .05em;
 }
 
-
 header nav ul{
     list-style: none;
     display: flex;
@@ -63,6 +62,12 @@ header a {
     border-bottom: 3px solid white;
 }
 
+header a:hover {
+    background-color: var(--secondary-color);
+    color: black;
+    border-bottom: none;
+}
+
 /** Hero Style Start **/
 
 .hero {
@@ -80,7 +85,7 @@ header a {
 
 .hero h2 {
     color: white;
-    font-size: 36px;
+    font-size: 40px;
     font-weight: bold;
     font-style: italic;
     -webkit-text-stroke: 1px black;
@@ -152,6 +157,14 @@ header a {
     text-decoration: none;
 }
 
+.grid-item:hover {
+    border: 5px solid black;
+}
+.grid-item:hover span {
+    background-color: black;
+    color: white;
+}
+
 .work-grid-container span {
     font-size: 25px;
     font-weight: bold;
@@ -199,6 +212,12 @@ header a {
     padding: 0 15px;
 }
 
+.contact-info a:hover {
+    background-color: var(--secondary-color);
+    color: black;
+    border-bottom: none;
+}
+
 /** Media Queries **/
 
 @media screen and (max-width: 980px) {
@@ -229,7 +248,6 @@ header a {
     }
     .section-content {
         width: 100%;
-
     }
 
     .section-content img {
